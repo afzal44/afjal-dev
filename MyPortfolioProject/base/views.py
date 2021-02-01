@@ -31,7 +31,11 @@ def posts(request):
     context = {'posts':posts,'myFilter':myFilter}
     return render(request,'base/posts.html',context)
 def post(request,slug):
-    post = Post.objects.get(slug=slug)
+    try:
+        post = Post.objects.get(slug=slug)
+    except Post.DoesNotExist:
+        context = {}
+        return render(request,'base/posts.html',context)
     # print("ruby mali iss dunya ki ittij kjamen se nahi ::",post)
     context = {'post':post}
     return render(request,'base/post.html',context)

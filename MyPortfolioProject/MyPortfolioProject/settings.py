@@ -142,14 +142,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'afjal.ahamad44@gmail.com'
 EMAIL_HOST_PASSWORD = 'joazcjyfbflvthba'
 
-# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-# STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-# AWS_QUERYSTRING_AUTH = False
-# AWS_ACCESS_KEY_ID = 'AKIAT347V33WJEYYVJAW'
-# AWS_SECRET_ACCESS_KEY = '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'
-# AWS_STORAGE_BUCKET_NAME = 'www.afjal-dev.com'
-# AWS_S3_FILE_OVERWRITE = False
-# AWS_DEFAULT_ACL = None
+
 
 CKEDITOR_UPLOAD_PATH = 'uploads/'
 CKEDITOR_CONFIGS={
